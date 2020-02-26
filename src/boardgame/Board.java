@@ -53,6 +53,7 @@ public class Board {
 	
 	public boolean thereIsAPiece(Position position) {
 		if(!positionExists(position)) {
+			System.out.println(position);
 			throw new BoardException("Position out of Bounds");
 		}
 		return piece(position) != null;
